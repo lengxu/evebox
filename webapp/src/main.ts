@@ -72,7 +72,7 @@ import {ApiService} from "./api.service";
 import {EventServices} from "./eventservices.service";
 import {EventService} from "./event.service";
 import {ToastrService} from "./toastr.service";
-import {ReportsService} from "./reports.service";
+import {ReportsService} from "./reports/reports.service";
 
 import {EveboxFormatIpAddressPipe} from "./pipes/format-ipaddress.pipe";
 

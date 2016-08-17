@@ -30,6 +30,7 @@ import {EventComponent} from "./event.component";
 import {AlertsComponent} from "./alerts.component";
 import {AlertReportComponent} from "./reports/alerts-report.component";
 import {DNSReportComponent} from "./reports/dns-report.component";
+import {FlowReportComponent} from "./reports/flow-report.component";
 
 export const routes:RouterConfig = [
     {
@@ -52,14 +53,9 @@ export const routes:RouterConfig = [
         path: "events", component: EventsComponent, pathMatch: "prefix",
     }
     ,
-    {
-        path: "reports/alerts", component: AlertReportComponent,
-    }
-    ,
-    {
-        path: "reports/dns", component: DNSReportComponent,
-    }
-    ,
+    {path: "reports/alerts", component: AlertReportComponent},
+    {path: "reports/dns", component: DNSReportComponent},
+    {path: "reports/flow", component: FlowReportComponent},
     // Let the inbox by the default route.
     {
         path: "", redirectTo: "inbox", pathMatch: "prefix"
